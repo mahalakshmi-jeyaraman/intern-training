@@ -26,12 +26,13 @@ public class Que15b {
             temp = temp/10;
             count++;
         }
+        int temp2 = n;
        while(n > 0){
            temp = n%10;
-           sum = sum + power(temp,count);
+           sum = (int)(sum + Math.pow(temp,count));
            n = n / 10;
        }
-       if(sum == n){
+       if(sum == temp2){
            return true;
        }
        return false;
